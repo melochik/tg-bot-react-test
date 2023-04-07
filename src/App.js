@@ -2,17 +2,18 @@
 import { useEffect } from 'react';
 import './App.css';
 
-const telegram = window.telegram.WebApp 
+const telegram = window.Telegram.WebApp;
 
 function App() {
 
   useEffect( () =>{
-    telegram.ready()
-  })
+    }, [])
+   telegram.ready()
 
   const onClose = () => {
     telegram.close();
   }
+
   return (
     <div className="App">
        work
